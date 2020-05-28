@@ -64,9 +64,9 @@ exports.show = function (req, res) {
 }
 
 exports.edit = function (req, res) {
-    const { id } = req.params
+    const { id } = req.params // pegando  id
 
-    const memberFound = data.members.find(function (member) {
+    const memberFound = data.members.find(function (member) { //verificando o id correspondente ai membro
         return id == member.id
     })
 
